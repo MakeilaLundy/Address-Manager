@@ -26,9 +26,6 @@ stages:
       - alias: 'GIT'
         credentialId: 'GITHUB'
 
-	
-
-
 #  s4SdkQualityChecks:
 #    jacocoExcludes:
 #      - ''
