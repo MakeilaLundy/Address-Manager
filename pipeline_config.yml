@@ -23,8 +23,8 @@ stages:
     credentials:
       - alias: 'MOCK-SYSTEM'
         credentialId: 'MY-ERP'
-      - alias: 'GIT'
-	credentialId: 'GITHUB'	
+
+	
 
 
 #  s4SdkQualityChecks:
