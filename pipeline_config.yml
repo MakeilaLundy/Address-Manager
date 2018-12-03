@@ -19,10 +19,13 @@ stages:
     findbugsExcludesFile: '' #Path to findbugs exclude file
     pmdExcludes: '' # List or ANT style patterns
 
-#  integrationTests:
-#    credentials:
-#      - alias: ''
-#        credentialId: ''
+  integrationTests:
+    credentials:
+      - alias: 'MOCK-SYSTEM'
+        credentialId: 'MY-ERP'
+      - alias: 'GIT'
+	credentialId: 'GITHUB'	
+
 
 #  s4SdkQualityChecks:
 #    jacocoExcludes:
@@ -30,11 +33,11 @@ stages:
 #    nonErpDestinations:
 #      - ''
 
-#  productionDeployment:
-#    cfTargets:
-#      - org: 'org'
-#        space: 'Productive'
-#        apiEndpoint: 'https://'
-#        appName: 'appName'
-#        manifest: 'manifest.yml'
-#        credentialsId: 'credentialsId'
+  productionDeployment:
+    cfTargets:
+      - org: 'P2000932653trial_trial'
+        space: 'dev'
+        apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com'
+        appName: 'address-manager'
+        manifest: 'manifest.yml'
+        credentialsId: 'CF-DEPLOY'
